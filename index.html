@@ -1,18 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nuestro primer ejemplo en HTML</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Bravo Gonzalo</title>
+    <link rel="icon" type="image/x-icon" href="/Imagenes/cv.png">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Secular+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!--Open Graph data-->
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="www.example.com" />
+    <meta property="og:image" content="www.example.com/image.jpg" />
+    <meta property="og:description" content="Trabajo final para el curso de Desarrollo Eeb Front End" />
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
-    <p>Mi nombre es Gonzalo</p>
-    <img src="imagenes/20200814_1607432.jpg" alt="Gonzalo"
-         width="300" height="300">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/zwRAwlk90Hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+        <h1>Curriculum Vitae - Bravo Gonzalo</h1>
+        <img src="Imagenes/20200814_1607432.jpg" alt="Foto de CV Gonzalo" height="200px" width="200px">
+    </header>
+    
+    <nav>
+        <h2>DATOS PERSONALES</h2>
+            <ul> 
+                <li>Fecha de Nacimiento: 02/11/1988</li>
+                <li>Nacionalidad; Argentino</li>
+                <li>Domicilio: San Carlos de Bariloche, Provincia de Río Negro</li>
+                <li>Teléfono: 2944-945786</li>
+                <li>Correo electrónico: gonzalobravo222@gmail.com</li>
+            </ul>
+    </nav>  
+     
+    <section>
+        <h2>FORMACIÓN ACADÉMICA</h2>
+            <p class="clase">-Ingeniería en Computación - Universidad Nacional de Río Negro (Sede Andina) - Primer año en curso</p>
+            <p class="clase">-Profesor de Música - Conservatorio Gilardo Gilardi La Plata</p>
+        
+    
+        <h2>EXPERIENCIA LABORAL</h2>
+            <p class="clase">-Programación y desarrollo web</p>
+            <p class="clase">-Profesor de música</p>
+        
+
+        <h2>IDIOMAS</h2>
+            <p class="clase">-Inglés: Básico</p>
+        
+                
+        <h2>INFORMÁTICA</h2>
+            <p class="clase">-Lenguajes de Programación: HTML, CSS, Javascript</p>
+    </section>
+    
+    <article>
+        <p id="algosm">Algo sobre mí: Además de la informática, mi otra pasión es la música, comparto el siguiente video:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zwRAwlk90Hg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+    <aside>
+        <p id="parrafo_form"> Para comunicarse conmigo complete el siguiente formulario:</p>
+        <form action="" method="get">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" /><br>
+            <br>
+            <label>Apellido:</label>
+            <input type="text" name="Apellido" placeholder="Ingrese su apellido" /><br>
+            <br>
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Ingrese su e-mail" /><br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </aside>
+
+     <footer>
+        <p>Gonzalo Ezequiel Bravo - Año 2023</p>
+    </footer>
+    
+     
 </body>
-</html> 
+</html>
